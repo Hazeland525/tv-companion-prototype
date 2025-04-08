@@ -1,0 +1,69 @@
+/* Container holds the two sections side by side */
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Left section takes up 70% of the width */
+  #left-section {
+    flex: 7;
+    padding: 20px;
+  }
+  
+  /* Right section takes up 30% of the width */
+  #right-section {
+    flex: 3;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 2px solid #ddd;
+  }
+  
+  /* Optional: Style adjustments for video and chat interface */
+  video {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #000;
+    margin-top: 1em;
+  }
+  
+  #chat-container {
+    margin-top: 1em;
+  }
+  
+  #chat-history {
+    height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #chat-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  #send-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  #responseBox {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    color: #000; /* Ensure text is visible */
+  }
+
+  #canvas {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }

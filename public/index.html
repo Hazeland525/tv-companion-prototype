@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Companion Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="left-section">
+      <h1>📺 Watching TV with AI</h1>
+      <video id="screenVideo" autoplay></video>
+      <div id="chat-container">
+        <div id="chat-history"></div>
+        <input type="text" id="chat-input" placeholder="Type your message here..." />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+    <div id="right-section">
+      <button id="startCapture">Start Screen Capture</button>
+      <button id="endCapture">End Screen Capture</button>
+      <!-- <button id="analyze">Analyze Frame</button> -->
+      <canvas id="canvas" style="display:none;"></canvas>
+      <div id="responseBox"></div>
+      <div id="viewingHistory"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
