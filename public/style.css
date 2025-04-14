@@ -8,13 +8,13 @@
   
   /* Left section takes up 70% of the width */
   #left-section {
-    flex: 7;
+    flex: 6;
     padding: 20px;
   }
   
   /* Right section takes up 30% of the width */
   #right-section {
-    flex: 3;
+    flex: 4;
     padding: 20px;
     background-color: #f4f4f4;
     border-left: 2px solid #ddd;
@@ -33,7 +33,7 @@
   }
   
   #chat-history {
-    height: 200px;
+    height: 70vh;
     overflow-y: auto;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -47,7 +47,17 @@
     margin-right: 10px;
   }
   
-  #send-button {
+  .chat-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  #voice-input{
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  #startStream{
     padding: 10px 20px;
     margin-top: 20px;
   }

@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TV Companion Prototype</title>
+  <title>Companion Memory</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="container">
     <div id="left-section">
-      <h1>📺 Watching TV with AI</h1>
-      <video id="screenVideo" autoplay></video>
+      <h1>Conversation Memory</h1>
       <div id="chat-container">
         <div id="chat-history"></div>
         <input type="text" id="chat-input" placeholder="Type your message here..." />
-        <button id="send-button">Send</button>
+        <button class= "chat-button" id="send-button">Send</button>
+        <button class= "chat-button" id="start-recording">Start Voice Recording</button>
+        <button class= "chat-button" id="stop-recording">Stop Voice Recording</button>
       </div>
     </div>
     <div id="right-section">
+      <h1>Viewing Memory</h1>
+      <video id="screenVideo" autoplay></video>
       <button id="startCapture">Start Screen Capture</button>
       <button id="endCapture">End Screen Capture</button>
       <!-- <button id="analyze">Analyze Frame</button> -->
@@ -26,6 +29,6 @@
       <div id="viewingHistory"></div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js"></script> 
 </body>
 </html>
